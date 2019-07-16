@@ -1,3 +1,11 @@
+<!-- The MIT License (MIT) Copyright (c)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,25 +18,35 @@
 
 </head>
 
+
   <body>
-        <div id="style2">
+
+     <div id="style2">
           <div id="style2" class="ui labeled icon menu">
             <a href="https://github.com/vaibhavrkumar" class="item">
               <i class="github icon"></i>
-            Github
+            Github Profile
             </a>
+
+
             <a href="https://www.linkedin.com/in/vaibhav-k-325a0213b/" class="item">
               <i class="linkedin  icon"></i>
-              LinkedIn
+              LinkedIn Profile
             </a>
+
             <a href="https://resume.creddle.io/resume/2z2xqijw8oq" class="item">
               <i class="file alternate icon"></i>
-              Resume
+              My Resume
+            </a>
+
+            <a href="https://medium.com/@vaibhavk241298" class="item">
+            	<i class="medium icon"></i>
+            	Medium Blog
             </a>
             
             <a href="#page2" class="item">
                 <i class="terminal icon"></i>
-              Projects
+              My Projects
             </a>
 
             <a href="#page3" class="item">
@@ -41,43 +59,59 @@
 
         
 
-      <div id="page1">        
+    <div id="page1">    
+      
+      <div id="app">
+    	<span id="ityped"></span>
+  	  </div>
+  	 	<script src="https://unpkg.com/ityped@1.0.2"></script>    
+
         <center>
-            <p id="font">Vaibhav R. Kumar - &nbsp; University of British Columbia (2021)</p>
-            <a href="page2">
-                <button class="ui inverted violet button">Explore</button>
-            </a>
+        	
+        		<p id="font" style="font-family: palatino;font-size:36px">
+            	<script>
+			    ityped.init(document.querySelector("#ityped"), {
+			      showCursor: true,
+			      strings: ['Vaibhav R. Kumar, Computer Science',
+			       			'University of British Columbia 2021'],
+			      typeSpeed: 200
+			    })			  
+				</script>
+        		</p>
+
+        		<a href="#page2">
+                <button class="ui inverted violet button">Scroll Down
+                	&nbsp;
+                	<i class="angle double down icon"></i>
+                </button>
+            	</a>
+        	      
         </center>
          
-      </div>
+    </div>
 
       <div id="page2">
           <h4 class="ui horizontal divider header">
               <i class="terminal icon"></i>
-              My Projects
+              Projects
             </h4>
-            <p> Write Something here...</p>
-
-            <h2 id="style2">
-              <center> fields </center>  
-              </h2>
-
+   
             <div id="style3">                
                 <div class="ui three stackable cards">
 
                     <div class="ui raised link card">
                         <div class="content">
-                          <div class="header">P1</div>
+                          <div class="header">Sentimental Analysis</div>
                           <div class="meta">
-                            <span class="category"><i class="python icon"></i> Python</span>
+                            <span class="category"><i class="python icon"></i> Python - Data Science</span>
                           </div>
                           <div class="description">
-                            <p>Bla bla bla ...</p>
+                            <p>Categorised tweets according to user sentiment. </p>
                           </div>
                         </div>
                         <div class="extra content">
                           <div class="right floated author">
-                            <a href="https://github.com/vaibhavrkumar/tumorClassification">
+                            <a href="https://github.com/xp55mihir/summer-project-2019">
                               <i class="github alternate icon"></i>
                               View Source on Github
                             </a>                  
@@ -87,12 +121,13 @@
 
                     <div class="ui raised link card">
                         <div class="content">
-                          <div class="header">P2</div>
+                          <div class="header">Breast Cancer Classification</div>
                           <div class="meta">
-                            <span class="category"><i class="python icon"></i> Python</span>
+                            <span class="category"><i class="python icon"></i> Python - Data Science
+                            </span>
                           </div>
                           <div class="description">
-                            <p>Bla bla bla ...</p>
+                            <p>Using support vector classifier (svc) techniques to classify tumors into malignant and belign.</p>
                           </div>
                         </div>
                         <div class="extra content">
@@ -112,36 +147,83 @@
       <div id="page3">
           <h4 class="ui horizontal divider header">
               <i class="users icon"></i>
-              My involvement at UBC
+              Involvement at UBC
             </h4>
-            <p> Write Something here...</p>
-            <div class="ui three coloumn grid" id="style4">
-                <div class="ui raised link card">
-                    <div class="content">
-                      <div class="header">RA - UBC</div>
-                      <div class="meta">
-                        <span class="category">iOS App. Developer</span>
-                        <h5>Write something here!</h5>
-                      </div>
-                      <div class="description">
-                        <p></p>
-                      </div>
-                    </div>
-                    <div class="extra content">
-                      <div class="right floated author">
-                          <i class="linkify icon"></i>
-                          <a href="https://smartdonate.org/team/">         
-                            Smart Donate
-                          </a>
-                      </div>
-                    </div>
-              </div>      
-            </div>
+	
+
+	<div class="ui link cards">
+			  <div class="card">
+			    <div class="image">
+			      <img src="smartdonate.png">
+			    </div>
+			    <div class="content">
+			      <div class="header">Smart Donate</div>
+			      <div class="meta">
+			        <a>University of British Columbia- Okanagan</a>
+			      </div>
+			      <div class="description">
+			        Currently working as a technical advisor.
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <span class="right floated">
+			        Joined in 2018
+			      </span>
+			      <span>
+			        
+			        <a href="https://smartdonate.org/"><i class="linkify icon"></i> Official Website</a>
+			      </span>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="image">
+			      <img src="nwhacks.jpeg">
+			    </div>
+			    <div class="content">
+			      <div class="header">Hackathon - nwHacks 2018</div>
+			      <div class="meta">
+			        <a>University of British Columbia - Vancouver</a>
+			      </div>
+			      <div class="description">
+			        Participated in the largest hackathon in Western Canada!
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <span class="right floated">
+			        26th January 2019
+			      </span>
+			      <span>
+			        
+			        View Project <i class="github square icon"></i>
+			      </span>
+			    </div>
+			  </div>
+
+			  <div class="card">
+			    <div class="image">
+			      <img src="jumpstart.png">
+			    </div>
+			    <div class="content">
+			      <div class="header">JumpStart (JS)</div>
+			      <div class="meta">
+			        <a>University of British Columbia - Okanagan</a>
+			      </div>
+			      <div class="description">
+			        Volunteered as a JS leader to help freshmen student move in.
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <span class="right floated">
+			        September 2018
+			      </span>
+			      
+			    </div>
+			  </div>
+	</div>
 
             <div class="footer">
               <center>
-                <i> <h4>🦄 Intrested to talk? <a href="mailto:vaibhavk241298@gmail.com">Drop me a message </a></h4> </i> 
-                Made by: Vaibhav R. Kumar
+                <i> <h4>🦄 Intrested to talk? <a href="mailto:vaibhavk241298@gmail.com">Drop me a message </a></h4> </i>                 
               </center>
             </div> 
         </div>
