@@ -144,7 +144,6 @@
         font-size: 20px;
         background-color: #F0C090;
         color: black;
-        /* padding-left: 10px; */
     }
 
     #page1{
@@ -153,7 +152,10 @@
         font-size: 20px;
         background-color: #F0C090;
         color: black;
-        padding-left: 300px;
+        padding-left: 600px;
+        padding-bottom: 30px;
+        padding-top: 190px;
+
     }
 
     #page2{
